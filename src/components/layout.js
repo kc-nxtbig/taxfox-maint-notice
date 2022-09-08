@@ -7,22 +7,10 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <div
@@ -39,10 +27,13 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          {new Date().getFullYear()} &middot; © Taxfox is a Registered Trademark
-          of
+          Taxfox&#8482; is a Registered Trademark of
           {` `}
-          <a href="https://taxfox.in">NxtBig Software Labs Pvt Ltd</a>
+          <a href="https://taxfox.in">
+            NxtBig Software Labs Pvt Ltd.
+            <br />
+          </a>
+          ©{new Date().getFullYear()} &middot; All rights reserved
         </footer>
       </div>
     </>

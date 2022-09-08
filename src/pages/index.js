@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -11,8 +10,8 @@ const IndexPage = () => (
     <Seo title="Taxfox undegoiung maintenance" />
 
     <div className={styles.textCenter}>
-      <h1>Welcome to</h1>
       <div id="article">
+        <h1>Welcome !</h1>
         <StaticImage
           src="../images/svgviewer-png-output.png"
           loading="eager"
@@ -22,20 +21,22 @@ const IndexPage = () => (
           alt=""
           style={{ marginBottom: `var(--space-3)` }}
         />
-        <img src="../images/svgviewer-png-output.png" />
-        <h1>Our site is getting a little tune up and some love.</h1>
-        <div>
-          <p>
-            We apologize for the inconvenience, but we're performing some
-            maintenance. You can still contact us at{" "}
-            <a href="mailto:support@taxfox.com">support@taxfox.com</a> or send a
-            Whatsapp message on <a href="tel:+918826528880">+91 88265 28880</a>.
-          </p>
-          <p>
-            {" "}
-            <strong>We'll be back up soon!</strong>
-          </p>
-        </div>
+
+        <h2>Our site is getting a little tune up and some love.</h2>
+
+        <p>
+          We apologize for the inconvenience, but we're performing a planned
+          upgrade to our site to pack more features for you!
+        </p>
+        <p>
+          You can still contact us at{" "}
+          <a href="mailto:support@taxfox.com">support@taxfox.com</a> or send a
+          Whatsapp message on <a href="tel:+918826528880">+91 88265 28880</a>.
+        </p>
+        <p>
+          {" "}
+          <strong>We'll be back up soon!</strong>
+        </p>
       </div>
     </div>
   </Layout>
